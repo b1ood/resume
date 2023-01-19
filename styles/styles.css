@@ -1,0 +1,49 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5rem 7rem 7rem 7rem;
+}
+
+p {
+    font-family: 'Ink Free', sans-serif;
+    font-size: 18px;
+    color: #ff535c;
+}
+
+ul {
+    margin-top: 1rem;
+    padding: 0;
+}
+
+li {
+    font-weight: lighter;
+    line-height: 2;
+    list-style-type: none;
+}
+
+li:first-child {
+    margin-top: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+@media (max-width: 992px) {
+    section {
+        padding: 4rem .2rem 8rem .2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        min-width: 250px;
+    }
+}

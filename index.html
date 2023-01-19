@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles/front.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/fonts.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <meta name="viewport" content="width=device-width, user-scalable=yes">
+    <title>resumeForDataMola</title>
+</head>
+<body>
+
+<header id="header">
+    <h3 class="title">#resumeForDataMola</h3>
+    <nav class="navbar" role="navigation">
+        <button class="title" data-index="1">About me</button>
+        <button class="title" data-index="2">Pet-projects</button>
+        <button class="title" data-index="3">Contacts</button>
+    </nav>
+
+    <nav class="hamburger-menu" id="menu">
+        <input id="menu-toggle" type="checkbox"/>
+        <label class="menu-btn" for="menu-toggle"
+               onclick="activateMenu()">
+            <span id="label"></span>
+        </label>
+        <div class="menu-box">
+            <button class="menu-item is-size-5" data-index="1">About me</button>
+            <button class="menu-item is-size-5" data-index="2">Pet-projects</button>
+            <button class="menu-item is-size-5" data-index="3">Contacts</button>
+        </div>
+    </nav>
+</header>
+
+<section class="person text-centered">
+    <div class="person-item" role="banner">
+        <h1 class="title title-text is-size-1">Angular Frontend Developer</h1>
+        <h4 class="subtitle">&& I love what I do</h4>
+        <img class="avatar" src="assets/avatar.png" alt="avatar">
+    </div>
+    <div class="person-item">
+        <div class="container">
+            <img src="assets/footer-icons/footer-img.jpg" alt="icon" class="icon">
+        </div>
+    </div>
+</section>
+
+<section class="is-crimson" id="aboutBlock">
+    <div class="container text-centered">
+        <h1 class="title is-size-3 is-white-text">Hi, I'm Gleb. Pleased to meet you.</h1>
+        <h4 class="subtitle is-size-5 is-white-text">At the university I was introduced to programming, and since then I
+            like to develop in this direction. During this time, I managed to strengthen my knowledge in layout, including
+            JavaScript, evaluate the capabilities of Angular and TypeScript, work with Bootstrap, NodeJS and much more,
+            and finally demonstrate my knowledge through small pet-projects.</h4>
+    </div>
+</section>
+
+<section class="skills">
+    <div class="container">
+        <div class="box text-justify">
+            <div class="column">
+                <img class="logo-icon"
+                     src="assets/logo-icons/native-icon.png" alt="icon">
+                <h3 class="subtitle is-size-3">Native</h3>
+                <p class="is-size-5">HTML, CSS and JS are the base. Without this knowledge, it is impossible
+                    to rationally develop as a frontend developer.</p>
+                <ul class="marked-text title is-size-5">
+                    My knowledge base
+                    <li>HTML</li>
+                    <li>CCS</li>
+                    <li>JavaScript</li>
+                    <li>DevTools</li>
+                    <li>Git</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img class="logo-icon"
+                     src="assets/logo-icons/angular-logo.png" alt="icon">
+                <h3 class="subtitle is-size-3">Angular</h3>
+                <p class="is-size-5">I like the variety of features Angular has to offer.
+                    And building web applications on this framework is a
+                    pleasure.</p>
+                <ul class="marked-text title is-size-5">
+                    Why I liked Angular
+                    <li>TypeScript</li>
+                    <li>Reactive programming</li>
+                    <li>Dependency Injection</li>
+                    <li>Angular Material</li>
+                    <li>And much more</li>
+                </ul>
+            </div>
+            <div class="column">
+                <img class="logo-icon"
+                     src="assets/logo-icons/other-icon.png" alt="icon">
+                <h3 class="subtitle is-size-3">Other</h3>
+                <p class="is-size-5">As I dived into the frontend,
+                    I got to know a lot of technologies.
+                    They are great to complement my pet-projects</p>
+                <ul class="marked-text title is-size-5">
+                    Had an experience
+                    <li>GitHub</li>
+                    <li>React</li>
+                    <li>Node.JS</li>
+                    <li>Bootstrap</li>
+                    <li>SCSS</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="text-centered skills" id="petProjectsBlock">
+    <h1 class="title title-text is-size-2">My latest work</h1>
+    <h3 class="subtitle">Here are some of my projects</h3>
+    <div class="project-list">
+        <div class="project-card">
+            <img src="assets/proj-images/bmw-proj-image.jpg"
+                 class="project-icon" alt="icon">
+            <div class="project-link">
+                <p class="marked-text">Description, characteristics, history and a little more about BMW M3 Series.</p>
+                <a href="https://stackblitz.com/edit/angular-ivy-qupm33"
+                   class="link regular-text">View project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/proj-images/loginForm-proj-image.jpg"
+                 class="project-icon" alt="icon">
+            <div class="project-link text-centered">
+                <p class="marked-text">A small project with registration of new users and authentication of existing
+                    ones.</p>
+                <a href="https://stackblitz.com/edit/angular-ivy-ybnqjr"
+                   class="link regular-text">View project</a>
+            </div>
+        </div>
+        <div class="project-card">
+            <img src="assets/proj-images/nodejs-proj-image.jpg"
+                 class="project-icon" alt="icon">
+            <div class="project-link">
+                <p class="marked-text">Several small NodeJS projects.</p>
+                <a href="https://github.com/b1ood?tab=repositories"
+                   class="link regular-text">View projects</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="is-bottom">
+    <div class="is-flexible">
+        <div class="level">
+            <p class="title marked-text is-size-3">What’s up?</p>
+        </div>
+        <div class="level">
+            <p class="is-size-4 text-justify regular-text">We don't know each other,
+                <br> but we can fix it. </p>
+        </div>
+        <div class="level">
+            <p class="is-size-4 clickable">dostagleb@yandex.by</p>
+        </div>
+    </div>
+</section>
+
+<footer id="contactsBlock">
+    <h3 class="title is-white-text text-justify is-size-4"><span id="copy">&copy;</span> Created with assistance of capybaras and Ricardo Milos</h3>
+    <p>
+        <a class="is-white-text social-network-link" href="https://vk.com/ganimed1">
+            <img src="assets/contact-icons/vk-white.png" class="contact-icon" alt="icon">
+            <img src="assets/contact-icons/vk.png" class="contact-icon-active" alt="icon">
+        </a>
+        <a class="is-white-text social-network-link" href="https://t.me/ganimed20">
+            <img src="assets/contact-icons/telegram-white.png" class="contact-icon" alt="icon">
+            <img src="assets/contact-icons/telegram.png" class="contact-icon-active" alt="icon">
+        </a>
+        <a class="is-white-text social-network-link" href="https://www.instagram.com/gleb.ganimed">
+            <img src="assets/contact-icons/instagram-white.png" class="contact-icon" alt="icon">
+            <img src="assets/contact-icons/instagram.png" class="contact-icon-active" alt="icon">
+
+        </a>
+        <a class="is-white-text social-network-link" href="https://www.linkedin.com/in/gleb-dosta-012488253/">
+            <img src="assets/contact-icons/linkedin-white.png" class="contact-icon" alt="icon">
+            <img src="assets/contact-icons/linkedin.png" class="contact-icon-active" alt="icon">
+        </a>
+    </p>
+</footer>
+
+<script src="index.js"></script>
+
+</body>
+</html>
