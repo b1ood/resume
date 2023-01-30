@@ -123,12 +123,9 @@
 }
 
 .level {
+    width: 33.3333%;
     box-sizing: border-box;
     padding: 10px;
-}
-
-.level:nth-child(2) {
-
 }
 
 @media (min-width: 1500px) {

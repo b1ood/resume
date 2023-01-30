@@ -3,11 +3,11 @@ function activateMenu() {
     hamburgerMenu.classList.toggle('is-active-hamburger');
 }
 
-let navigation = document.getElementById('header');
-let aboutBlock = document.getElementById('aboutBlock');
-let petProjectsBlock = document.getElementById('petProjectsBlock');
-let contactsBlock = document.getElementById('contactsBlock');
-let blocks = [aboutBlock, petProjectsBlock, contactsBlock]
+const navigation = document.getElementById('header'),
+    aboutBlock = document.getElementById('aboutBlock'),
+    petProjectsBlock = document.getElementById('petProjectsBlock'),
+    contactsBlock = document.getElementById('contactsBlock'),
+    blocks = [aboutBlock, petProjectsBlock, contactsBlock]
 
 navigation.addEventListener('click', () => {
     let target = event.target;
@@ -24,4 +24,23 @@ let copySign = document.getElementById('copy');
 
 setInterval(() => {
     copySign.style.color = '#' + Math.floor(Math.random() * 16777215).toString(16);
-}, 200)
+}, 200);
+
+const mail = document.getElementById('mail');
+
+mail.addEventListener('click', () => {
+    let currentMail = mail.innerHTML;
+
+    navigator.clipboard.writeText(mail.innerHTML)
+        .then(() => {
+            mail.innerHTML = 'Successfully copied.';
+        })
+        .catch(() => {
+            mail.innerHTML = 'Oops... Something gone wrong.';
+        })
+        .finally(() => {
+            setTimeout(() => {
+                mail.innerHTML = currentMail;
+            }, 1500);
+        })
+})
